@@ -2,7 +2,7 @@ const router = require("express").Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken")
-let jwtSecretKey = "process.env.SECRET_KEY";
+let jwtSecretKey = process.env.SECRET_KEY;
 // Register
 const hashedPassword = async(password) => {
     const salt = bcrypt.genSaltSync(10);

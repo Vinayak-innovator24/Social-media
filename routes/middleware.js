@@ -1,4 +1,4 @@
-let jwtSecretKey = "process.env.SECRET_KEY";
+let jwtSecretKey = process.env.SECRET_KEY;
 const jwt = require("jsonwebtoken")
 /**
  * 
